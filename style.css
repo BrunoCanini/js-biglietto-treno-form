@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    background-color: #b91450;
+    margin: auto;
+    padding: 3rem;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+section{
+    max-width: 850px;
+    background-color: white;
+    margin: auto;
+    padding: 1.2rem;
+}
+
+#formTicket{
+    border-radius: 0.7rem;
+}
+
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calc{
+    width: calc(100% / 3);
+}
+
+.textCenter{
+    text-align: center;
+    padding: 1rem;
+}
+
+button{
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+table{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.bc-grey{
+    background-color: rgb(189, 182, 182);
+}

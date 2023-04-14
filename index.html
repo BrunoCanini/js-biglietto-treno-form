@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-biglietto-treno-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </header>
+
+        <main>
+
+            <section id="formTicket">
+
+                <div class="flexWrap">
+                    <div class="calc textCenter">
+                        <h4>Nome Cognome</h4>
+                        <input type="text">
+                    </div>
+                    <div class="calc textCenter">
+                        <h4>Km da percorrere</h4>
+                        <input type="number">
+                    </div>
+                    <div class="calc textCenter">
+                        <h4>Fascia d'età</h4>
+                        <select name="età" id="">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="textCenter">
+                    <button>Genera</button>
+                    <button>Annulla</button>
+                </div>
+
+            </section>
+
+            <h1>IL TUO BIGLIETTO</h1>
+
+            <section>
+                <h2>DETTAGLIO PASSEGGERI</h2>
+
+                <table>
+                    <tr>
+                      <th class="bc-grey">NOME PASSEGGERO</th>
+                      <th>Offerta</th>
+                      <th>Carrozza</th>
+                      <th>Codice CP</th>
+                      <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                      <th class="bc-grey">Bruno Canini</th>
+                      <th>Biglietto Standard</th>
+                      <th>5</th>
+                      <th>92911</th>
+                      <th>2.10$</th>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
