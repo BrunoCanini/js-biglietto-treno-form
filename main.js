@@ -37,3 +37,21 @@ button.addEventListener("click", function(){
     document.getElementById("nCarrozza").innerText = carrozza
 
 });
+
+const button2 = document.getElementById("annulla");
+button2.addEventListener("click", function(){
+    const nomeUtente = document.getElementById("nomePasseggero").value = "";
+    document.getElementById("nome").innerText = nomeUtente;
+
+    const kilometri = document.getElementById("kmUtente").value = "";
+
+    prezzoBiglietto = "-";
+    document.getElementById("costoBiglietto").innerText = prezzoBiglietto;
+
+    let codiceCp = "-";
+    document.getElementById("codice").innerText = codiceCp;
+
+    let carrozza = "-";
+    document.getElementById("nCarrozza").innerText = carrozza;
+
+});
