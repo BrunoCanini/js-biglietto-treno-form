@@ -30,11 +30,21 @@ button.addEventListener("click", function(){
     prezzoBiglietto = Math.floor(prezzoBiglietto * 100) / 100;
     document.getElementById("costoBiglietto").innerText = prezzoBiglietto + "€"
 
-    let codiceCp = Math.floor(Math.random()*10000);
-    document.getElementById("codice").innerText = codiceCp
+    if(nomeUtente == "" || kilometri == ""){
+        let codiceCp = 0;
+        document.getElementById("codice").innerText = codiceCp;
+    } else {
+        let codiceCp = Math.floor(Math.random()*10000 + 1);
+        document.getElementById("codice").innerText = codiceCp;
+    }
 
-    let carrozza = Math.floor(Math.random()*10);
-    document.getElementById("nCarrozza").innerText = carrozza
+    if(nomeUtente == "" || kilometri == ""){
+        let carrozza = 0;
+        document.getElementById("nCarrozza").innerText = carrozza
+    } else {
+        let carrozza = Math.floor(Math.random()*10 + 1);
+        document.getElementById("nCarrozza").innerText = carrozza
+    }
 
 });
 
