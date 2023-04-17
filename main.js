@@ -66,6 +66,6 @@ button2.addEventListener("click", function(){
     let carrozza = "-";
     document.getElementById("nCarrozza").innerText = carrozza;
 
-    let offerta = "-";
+    offerta = "-";
     document.getElementById("biglietto").innerText = offerta;
 });
