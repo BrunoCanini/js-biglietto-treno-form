@@ -16,7 +16,7 @@ button.addEventListener("click", function(){
 
     if(etaUtente == "minorenne"){
         sconto = 20;
-        offerta = "Biglietto Minorenne"
+        offerta = "Biglietto Junior"
     } else if (etaUtente == "over65"){
         sconto = 40;
         offerta = "Biglietto Senior"
