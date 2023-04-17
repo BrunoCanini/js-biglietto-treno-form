@@ -1,11 +1,10 @@
-let sconto = 0;
-
 let prezzoBiglietto = 0;
 
 let offerta ;
 
 const button = document.getElementById("bottone");
 button.addEventListener("click", function(){
+    let sconto = 0;
     const kilometri = document.getElementById("kmUtente").value;
     const etaUtente = document.getElementById("anniUtente").value;
     const nomeUtente = document.getElementById("nomePasseggero").value;
