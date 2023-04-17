@@ -35,17 +35,15 @@ button.addEventListener("click", function(){
         let codiceCp = 0;
         document.getElementById("codice").innerText = codiceCp;
 
+        let carrozza = 0;
+        document.getElementById("nCarrozza").innerText = carrozza
+
         let offerta = "-";
         document.getElementById("biglietto").innerText = offerta;
     } else {
         let codiceCp = Math.floor(Math.random()*10000 + 1);
         document.getElementById("codice").innerText = codiceCp;
-    }
 
-    if(nomeUtente == "" || kilometri == ""){
-        let carrozza = 0;
-        document.getElementById("nCarrozza").innerText = carrozza
-    } else {
         let carrozza = Math.floor(Math.random()*10 + 1);
         document.getElementById("nCarrozza").innerText = carrozza
     }
