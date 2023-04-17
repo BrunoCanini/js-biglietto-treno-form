@@ -1,12 +1,8 @@
-const kilometri = document.getElementById("kmUtente");
+let sconto = 0;
 
-const etaUtente = document.getElementById("anniUtente");
+let prezzoBiglietto = 0;
 
-const nomeUtente = document.getElementById("nomePasseggero")
-
-let sconto = 0
-
-let prezzoBiglietto = 0
+let offerta ;
 
 const button = document.getElementById("bottone");
 button.addEventListener("click", function(){
@@ -20,11 +16,16 @@ button.addEventListener("click", function(){
 
     if(etaUtente == "minorenne"){
         sconto = 20;
+        offerta = "Biglietto Minorenne"
     } else if (etaUtente == "over65"){
         sconto = 40;
+        offerta = "Biglietto Senior"
     } else if (etaUtente == "maggiorenne"){
         sconto = 0;
+        offerta = "biglietto Standard"
     }
+
+    document.getElementById("biglietto").innerText = offerta;
 
     prezzoBiglietto = prezzoKm - (prezzoKm * sconto /100);
     prezzoBiglietto = Math.floor(prezzoBiglietto * 100) / 100;
@@ -64,4 +65,6 @@ button2.addEventListener("click", function(){
     let carrozza = "-";
     document.getElementById("nCarrozza").innerText = carrozza;
 
+    let offerta = "-";
+    document.getElementById("biglietto").innerText = offerta;
 });
