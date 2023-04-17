@@ -34,6 +34,9 @@ button.addEventListener("click", function(){
     if(nomeUtente == "" || kilometri == ""){
         let codiceCp = 0;
         document.getElementById("codice").innerText = codiceCp;
+
+        let offerta = "-";
+        document.getElementById("biglietto").innerText = offerta;
     } else {
         let codiceCp = Math.floor(Math.random()*10000 + 1);
         document.getElementById("codice").innerText = codiceCp;
